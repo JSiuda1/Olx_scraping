@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "CqBOWNSmQENDaLInrHQ1YCYZivqxOFxb4J7/8JxyPq9lCsSrsQpQCkkJwvqupx0y6/BxqLg3B2lbFwzM9jJSHg==",
+  "success": true,
+  "projectFilePath": "D:\\github\\Olx_scraping\\Olx_scraping.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jakks\\.nuget\\packages\\htmlagilitypack\\1.11.34\\htmlagilitypack.1.11.34.nupkg.sha512",
+    "C:\\Users\\jakks\\.nuget\\packages\\htmlagilitypack.cssselectors.netcore\\1.2.1\\htmlagilitypack.cssselectors.netcore.1.2.1.nupkg.sha512",
+    "C:\\Users\\jakks\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
