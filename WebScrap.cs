@@ -10,14 +10,12 @@ namespace Olx_scraping
 {
     class WebScrap
     {
-        private const string url = "https://www.olx.pl/nieruchomosci/mieszkania/wroclaw/q-mieszkanie-3-pokojowe/?search%5Bfilter_float_price%3Ato%5D=3000";
-
-        public List<RoomsInfo> GetAnnouncments3Rooms()
+        public List<RoomsInfo> GetAnnouncmentsRooms(string page)
         {
             List<RoomsInfo> flats = new List<RoomsInfo>();
             
             var web = new HtmlWeb();
-            var doc = web.Load(url);
+            var doc = web.Load(page);
 
             var boxs = doc.QuerySelectorAll("#offers_table > tbody tr").Skip(2);
             
