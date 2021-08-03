@@ -1,0 +1,8 @@
+D:\github\Olx_scraping\obj\net5.0\publish\Olx_scraping.exe
+D:\github\Olx_scraping\obj\net5.0\publish\Olx_scraping.dll
+D:\github\Olx_scraping\obj\net5.0\publish\Olx_scraping.deps.json
+D:\github\Olx_scraping\obj\net5.0\publish\Olx_scraping.runtimeconfig.json
+D:\github\Olx_scraping\obj\net5.0\publish\Olx_scraping.pdb
+D:\github\Olx_scraping\obj\net5.0\publish\HtmlAgilityPack.dll
+D:\github\Olx_scraping\obj\net5.0\publish\HtmlAgilityPack.CssSelectors.NetCore.dll
+D:\github\Olx_scraping\obj\net5.0\publish\Newtonsoft.Json.dll

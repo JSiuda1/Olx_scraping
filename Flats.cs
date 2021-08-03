@@ -39,6 +39,11 @@ namespace Olx_scraping
             }
 
         }
+
+        public void Refresh()
+        {
+            Flats_list.Clear();
+        }
         
         public void ConcatenateLists(List<RoomsInfo> second_list)
         {
@@ -68,10 +73,26 @@ namespace Olx_scraping
                 Console.Write("Opis: ");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine(flat.Title);
+
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write("Cena: ");
-                Console.ForegroundColor = ConsoleColor.White;
+
+                string[] priceElems = flat.Price.Split(" ");
+                string cashstring = ""; 
+                for (int i=0; i< priceElems.Length - 1; ++i)
+                {
+                    cashstring += priceElems[i];
+                }
+                if(int.Parse(cashstring) > 3000)
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
                 Console.Write(flat.Price);
+
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write("\t Okolica: ");
                 if(flat.Region.Contains("Śródmieście") ^ flat.Region.Contains("Stare Miasto"))
@@ -85,14 +106,15 @@ namespace Olx_scraping
 
                 Console.Write(flat.Region);
                 Console.ForegroundColor = ConsoleColor.Yellow;
+
                 Console.Write("\t Data dodania: ");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine(flat.Date);
                 Console.ForegroundColor = ConsoleColor.Yellow;
+
                 Console.Write("Link: ");
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.WriteLine($"{flat.Url}");
-
             }
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("----------------------------------------------------------------------");
